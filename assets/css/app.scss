@@ -21,6 +21,11 @@ $transition:all ease-in .25s;
 
 body, html {
   height: 100%;
+  scrollbar-color: rgba(0,0,0,0);
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
