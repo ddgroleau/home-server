@@ -87,6 +87,7 @@ footer a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #161616;
+  overflow-x: hidden;
 }
 
 .content-box {
@@ -180,7 +181,7 @@ footer a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: rgba(22, 22, 22, 0.75);
-  z-index: 1;
+  z-index: 2;
   top: 3rem;
   right: 0;
   padding-right: 1rem;
