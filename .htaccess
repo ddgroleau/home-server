@@ -1,0 +1,13 @@
+
+# Apache2 filename/URI routing
+
+        RewriteCond      "%{DOCUMENT_ROOT}/views/%{REQUEST_URI}.php"  -f
+        RewriteRule (.*) "%{DOCUMENT_ROOT}/views/$1.php"  [L]
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule (.*) $1.php [L]
+        RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+        RewriteRule ^ /%1 [NC,L,R]
+
+# # To enable the re-write engine:
+	# sudo a2enmod rewrite && sudo service apache2 restart
