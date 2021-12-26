@@ -17,7 +17,7 @@
                     <a class="link nav-link" href="/">Home</a>
                     <a class="link nav-link" href="/projects">Projects</a>
                     <a class="link nav-link" href="/tutorials">Tutorials</a>
-                    <a class="link nav-link" href="/about">About</a>
+                    <a class="link nav-link" href="/#about-anchor">About</a>
                     <a class="link nav-link" href="/contact">Contact</a>
                 </nav>
                 <img id="navbar-toggler" class="navbar-toggler" src="/assets/media/hamburger-white.svg" onclick="toggleNav()">
@@ -26,7 +26,7 @@
                     <a id="home" class="link btn" href="/">Home</a>
                     <a id="projects" class="link btn" href="/projects">Projects</a>
                     <a id="tutorials" class="link btn " href="/tutorials">Tutorials</a>
-                    <a id="about" class="link btn" href="/about">About</a>
+                    <a id="about" class="link btn" href="/#about-anchor">About</a>
                     <a id="contact" class="link btn" href="/contact">Contact</a>
             </div>
         </header>
