@@ -40,4 +40,5 @@
     document.getElementById("navbar").style ="justify-content:flex-end";
     document.getElementById("navbar-dropdown").className ="navbar-dropdown-home";
     document.getElementById("home").style="display:none";
+    document.getElementById("about").style="display:none";
 </script>
