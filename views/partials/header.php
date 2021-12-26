@@ -10,7 +10,6 @@
     ?>
 </head>
 <body>
-    <div class="container">
         <header>
             <div id="navbar" class="navbar">
                 <nav id="nav-header" class="nav-header">

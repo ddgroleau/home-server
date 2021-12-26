@@ -11,7 +11,6 @@
                 </nav>
             </div>
         </div>
-      
         <div id="about-anchor" class="about-container content-box">
             <div class="skills-box">
                     <img class="img-scale-md img-hover" href="https://dotnet.microsoft.com/en-us/" src="/assets/media/csharp.svg">

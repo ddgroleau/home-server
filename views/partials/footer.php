@@ -4,6 +4,5 @@
                     <a href="contact">Contact</contact>
                 </div>
             </footer>
-        </div>
     </body>
 </html>
