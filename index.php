@@ -11,7 +11,7 @@
                 </nav>
             </div>
         </div>
-        <div id="about-anchor" class="about-container content-box">
+        <div id="about-anchor" class="about-container">
             <div class="skills-box">
                     <img class="img-scale-md img-hover" href="https://dotnet.microsoft.com/en-us/" src="/assets/media/csharp.svg">
                     <img class="img-scale-md img-hover" href="https://reactjs.org/" src="/assets/media/reactjs.svg">
@@ -32,9 +32,9 @@
                 </p>
                  <a class="link return-home" href="/">Return to Home</a>
             </div>
+            <?php include("./views/partials/footer.php"); ?>
         </div>
 
-<?php include("./views/partials/footer.php"); ?>
 <script type="text/javascript">
     document.getElementById("nav-header").style ="display:none";
     document.getElementById("navbar").style ="justify-content:flex-end";
