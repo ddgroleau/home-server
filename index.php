@@ -38,7 +38,19 @@
 <script type="text/javascript">
     document.getElementById("nav-header").style ="display:none";
     document.getElementById("navbar").style ="justify-content:flex-end";
-    document.getElementById("navbar-dropdown").className ="navbar-dropdown-home";
     document.getElementById("home").style="display:none";
     document.getElementById("about").style="display:none";
+    
+    let navbarDropdown = document.getElementById("navbar-dropdown")
+    navbarDropdown.className ="navbar-dropdown-home";
+
+    window.onscroll = () => { 
+    "use strict";
+    if (document.body.scrollTop >= 600 ) {
+        document.getElementById("navbar-dropdown").className ="navbar-dropdown";
+    } 
+    else {
+        document.getElementById("navbar-dropdown").className ="navbar-dropdown-home";
+    }
+};
 </script>
