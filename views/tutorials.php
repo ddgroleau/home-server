@@ -5,3 +5,8 @@
         </div>
 
 <?php include("./partials/footer.php"); ?>
+
+
+<script type="text/javascript">
+    document.getElementById("tutorials").style="display:none";
+</script>

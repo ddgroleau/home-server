@@ -31,3 +31,6 @@
     include("./partials/footer.php") 
 ?>
 
+<script type="text/javascript">
+    document.getElementById("about").style="display:none";
+</script>

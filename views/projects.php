@@ -5,3 +5,7 @@
         </div>
 
 <?php include("./partials/footer.php"); ?>
+
+<script type="text/javascript">
+    document.getElementById("projects").style="display:none";
+</script>
