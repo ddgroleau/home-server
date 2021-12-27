@@ -1,3 +1,90 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-toggler {
+  opacity: 80%;
+}
+
+.nav-header {
+  display: none;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  border-bottom: solid rgba(255, 255, 255, 0.1) 1px;
+}
+
+.nav-link:hover {
+  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
+  color: #fff;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(22, 22, 22, 0.75);
+  top: 3rem;
+  right: 0;
+  padding-right: 1rem;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.navbar-dropdown-home {
+  display: none;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(32, 49, 57, 0.75);
+  top: 3rem;
+  right: 0;
+  padding-right: 1rem;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.navbar-dropdown-home a {
+  color: #CF5A61;
+}
+
 body, html {
   height: 100%;
 }
@@ -98,93 +185,6 @@ footer a {
 .home-link {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #CF5A61;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-toggler {
-  opacity: 80%;
-}
-
-.nav-header {
-  display: none;
-}
-
-.nav-link {
-  margin: 0 1rem;
-  border-bottom: solid rgba(255, 255, 255, 0.1) 1px;
-}
-
-.nav-link:hover {
-  border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
-  color: #fff;
-  -webkit-transition: all ease-in 0.25s;
-  transition: all ease-in 0.25s;
-}
-
-.navbar-dropdown {
-  display: none;
-  position: absolute;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(22, 22, 22, 0.75);
-  top: 3rem;
-  right: 0;
-  padding-right: 1rem;
-  border-radius: 5px;
-  z-index: 100;
-}
-
-.navbar-dropdown-home {
-  display: none;
-  position: absolute;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: rgba(32, 49, 57, 0.75);
-  top: 3rem;
-  right: 0;
-  padding-right: 1rem;
-  border-radius: 5px;
-  z-index: 100;
-}
-
-.navbar-dropdown-home a {
   color: #CF5A61;
 }
 
@@ -331,6 +331,27 @@ footer a {
   padding: 1.5rem 0;
 }
 
+.social {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10%;
+  z-index: 1;
+  padding-right: 2.5rem;
+}
+
+.social i {
+  padding: 0 0.5rem;
+}
+
+.fab:hover {
+  color: #15B097;
+  -webkit-transition: all ease-in 0.25s;
+  transition: all ease-in 0.25s;
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 1024px) {
   .nav {
     -webkit-box-orient: horizontal;
@@ -344,9 +365,12 @@ footer a {
     display: flex;
   }
   .navbar {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav-header {
+    width: 100%;
   }
   .btn {
     margin: 0 0.5rem;

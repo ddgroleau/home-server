@@ -37,7 +37,6 @@
 
 <script type="text/javascript">
     document.getElementById("nav-header").style ="display:none";
-    document.getElementById("navbar").style ="justify-content:flex-end";
     document.getElementById("home").style="display:none";
     document.getElementById("about").style="display:none";
     

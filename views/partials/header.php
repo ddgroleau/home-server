@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/34584ec87f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/css/app.css">
     <?php 
         $title="Self-Hosted";
@@ -11,12 +12,17 @@
 </head>
 <body>
         <header>
+
             <div id="navbar" class="navbar">
+                <div class="social">
+                    <i href="https://github.com/ddgroleau" class="fab fa-github fa-2x"></i>
+                    <i href="https://www.linkedin.com/in/dangroleau/" class="fab fa-linkedin fa-2x"></i>
+                    <i href="https://twitter.com/_FullStackDan" class="fab fa-twitter fa-2x"></i>
+                </div>
                 <nav id="nav-header" class="nav-header">
                     <a class="link nav-link" href="/">Home</a>
                     <a class="link nav-link" href="/projects">Projects</a>
                     <a class="link nav-link" href="/tutorials">Tutorials</a>
-                    <a class="link nav-link" href="/#about-anchor">About</a>
                     <a class="link nav-link" href="/contact">Contact</a>
                 </nav>
                 <img id="navbar-toggler" class="navbar-toggler" src="/assets/media/hamburger-white.svg" onclick="toggleNav()">
