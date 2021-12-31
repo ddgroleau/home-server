@@ -1,6 +1,7 @@
 
 # Apache2 filename/URI routing
-
+        RewriteCond      "%{DOCUMENT_ROOT}/api/%{REQUEST_URI}.php"  -f
+        RewriteRule (.*) "%{DOCUMENT_ROOT}/api/$1.php"  [L]
         RewriteCond      "%{DOCUMENT_ROOT}/views/%{REQUEST_URI}.php"  -f
         RewriteRule (.*) "%{DOCUMENT_ROOT}/views/$1.php"  [L]
         RewriteCond %{REQUEST_FILENAME} !-d
